@@ -2,8 +2,7 @@
 <html lang="en">
     <head>
         <title> HOME </title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <?php include "includes\header.php"; ?>
         <style>
             .navbar-nav{
                 flex-direction: row;
@@ -16,10 +15,10 @@
                 background-size: cover;
                 background-repeat: no-repeat;
             }
-            .top-medium-spacing{
+            .top1-medium-spacing{
                 padding-top: 10px;
             }
-            .bottom-medium-spacing{
+            .bottom1-medium-spacing{
                 padding-bottom:10px;
             }
             .icon-spacing{
@@ -35,24 +34,22 @@
             .content-spacing-bottom{
                 padding-bottom: 60px;
             }
-            .team-section-bg{
-                background-color: #c4c4c4;
-            }
+            
             .footer-section-bg{
-                background-color: #F5F5F5;
+                background-color: grey;
             }
             .copyrights-section{
                 padding-top: 20px;
                 padding-bottom: 15px;
-                background-color: black;
+                background-color: blue;
                 color: white;
             }
             .custom-font-color{
-                color:#595D62;
+                color:white;
                 text-decoration: none;
             }
             .custom-font-color:hover{
-                color:#595D62;
+                color:white;
                 text-decoration: none;
             }
             .contact-us-spacing{
@@ -63,31 +60,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/cbit-logo.jpeg" height="50px" alt="logo">
-                </a>
-                <!-- <div class="navbar-nav"> -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="home.php" class="nav-link custom-font-color">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="aboutus.php" class="nav-link custom-font-color">
-                                About Us        
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contactus.php" class="nav-link custom-font-color">
-                                Contact Us   
-                            </a>
-                        </li>
-                       
-                    </ul>
-                <!-- </div> -->
-            </nav>
+        <?php include "includes\landing_nav.php"; ?>
             <div>
                 <img src="assets/images/cbit clg.jpg" width="1000" height="500px" >
             </div>
@@ -214,36 +187,12 @@
             </section>
 
         </main>
-        <footer>
-            <div class="top-medium-spacing bottom-medium-spacing footer-section-bg">
-                <div class="row content-spacing-bottom">
-                    <div class="col-4">
-                        <h5 class="custom-font-color" >Name</h5>
-                        <p class="custom-font-color">Lorem ipsum dolor sit amet,<br> 
-                            consectetur adipiscing elit.<br> 
-                            Morbi porta eleifend magna <br>
-                            dignissim varius. <br>
-                            Nunc tincidunt dui pulvinar<br>
-                            tempus rhoncus. </p>
-                    </div>
-                    <div class="col-4">
-                        <h5 class="custom-font-color">Quick Links</h5>
-                        <a href="#" class="custom-font-color">Home</a>
-                    </div>
-                    <div class="col-4">
-                        <h5 class="custom-font-color">Policies</h5>
-                        <a href="#" class="custom-font-color">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="copyrights-section">
-                <center>All Rights Reservered &copy; 2021 Some Website</center>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+       
+
+        
+            
+            <?php include "includes\\footer.php"; ?>
     </body>
 
 </html>
